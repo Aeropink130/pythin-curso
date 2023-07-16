@@ -78,5 +78,8 @@ except ValueError as e:
     fichero.write("Error de valores\n")
 
 finally:
-    fichero.write("Fin")
-    fichero.close()
+    try:
+        fichero.write("Fin")
+        fichero.close()
+    except FileNotFoundError:
+        print("Error con el fichero")
