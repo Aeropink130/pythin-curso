@@ -1,5 +1,3 @@
-import os
-
 try:
     # recibir los datos a través de los input
     # se guardan en las variables e tipo float
