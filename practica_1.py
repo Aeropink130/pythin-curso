@@ -9,12 +9,15 @@ de igual manera se crea un fichero indicando el resultado
 
 # creamos el fichero escribiendo
 # escribimos en el fichero lo que el programa hará
+# -*- coding: utf-8 -*-
+
+
 try:
-    fichero = open(
-        "C:/Users/aeropink/workspace/Python -19a21/fichero_practica_1.txt", "w")
+    # acortamos la ruta ya que quiero que se cree en la carpeta en la que em encuentro
+    fichero = open("fichero_practica_1.txt", "w", encoding="utf-8")
     fichero.write("Con este programa evaluamos las variables: \n")
     print("Fichero creado")
-except Exception:
+except FileNotFoundError:
     print("No se puede crar fichero")
 
 # creamos las variables y el cuerpo del programa en un try para validar los valores
