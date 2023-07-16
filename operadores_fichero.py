@@ -21,7 +21,7 @@ try:
 
     # crear archivo
     # wt = escritura de texto universal
-    archivo = open("C:\Python -19a21/archivo.txt", "w")
+    archivo = open(r"C:\Python -19a21/archivo.txt", "w")
 
     # escribir sobre el archivo
     archivo.write("suma: " + str(suma) + "\n")
